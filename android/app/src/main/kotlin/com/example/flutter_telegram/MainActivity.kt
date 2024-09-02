@@ -1,4 +1,4 @@
-package com.example.flutter_telegram
+package telegram.app;
 
 import io.flutter.embedding.android.FlutterActivity
 

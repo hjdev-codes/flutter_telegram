@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_telegram/pages/page1/homepage.dart';
+import 'package:flutter_telegram/a_pages/page2/homepage.dart';
 
 class OptPage extends StatefulWidget {
   const OptPage({super.key, required this.verfificationid});

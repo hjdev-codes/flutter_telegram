@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_telegram/pages/page1/otp.dart';
-import 'package:flutter_telegram/statemanagement.dart/providerdata.dart';
-import 'package:flutter_telegram/utalities/countrycode.dart';
+import 'package:flutter_telegram/a_login_pages/otp.dart';
+import 'package:flutter_telegram/b_utalities/countrycode.dart';
+import 'package:flutter_telegram/c_statemanagement.dart/providerdata.dart';
 import 'package:popover/popover.dart';
 import 'package:provider/provider.dart';
 
@@ -56,6 +56,7 @@ class _UserVerificationState extends State<UserVerification> {
                                     .signInWithCredential(phoneAuthCredential);
                               },
                               verificationFailed: (error) {
+                                print(error);
                                 EasyLoading.dismiss();
                                 showDialog(
                                   context: context,
